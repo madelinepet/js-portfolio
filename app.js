@@ -23,6 +23,12 @@ $("#game-link").click(function(){
     $("#game").show();
 })
 
+var counter = 15;
 $(".frogicorn").click(function(){
-    $(this).slideUp();
+    $(this).slideUp(100);
+    counter -= 1;
+    console.log(counter);
+    if (counter === 0) {
+        $("#click").text("Good job!")
+    }
 })
