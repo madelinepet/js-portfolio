@@ -1,6 +1,9 @@
 
 
-// instead set css here
+$( document ).ready(function() {
+    $("#projects").hide();
+    $("#game").hide();
+  });
 
 $("#projlink").click(function() {
     $("#projects").show();
