@@ -7,23 +7,23 @@ $( document ).ready(function() {
 
 $("#projlink").click(function() {
     $("#projects").show();
-    $("#about").hide();
-    $("#game").hide();
+    $("#about").slideUp();
+    $("#game").slideUp();
   })
 
 $("#home").click(function(){
     $("#about").show();
-    $("#projects").hide();
-    $("#game").hide();
+    $("#projects").slideUp();
+    $("#game").slideUp();
   })
 
 $("#game-link").click(function(){
-    $("#about").hide();
-    $("#projects").hide();
     $("#game").show();
+    $("#about").slideUp();
+    $("#projects").slideUp();
 })
 
-var counter = 15;
+var counter = 10;
 $(".frogicorn").click(function(){
     $(this).slideUp(100);
     counter -= 1;
